@@ -21,7 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'image_publisher = image_publisher.image_publisher:main',
-            'image_subscriber = image_publisher.image_subscriber:main'
+            #'image_subscriber = image_publisher.image_subscriber:main'
         ],
     },
 )
