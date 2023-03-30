@@ -21,6 +21,7 @@ class ImagePublisher(Node):
         encjpg = cv2.imencode('.jpg', img)
         jpg_as_text = String()
         jpg_as_text.data = str(base64.b64encode(encjpg[1])) #convert jpg to base64
+        #jpg_as_text.data = str(base64.b64encode(img))
         self.publisher_.publish(jpg_as_text)
 
 def main(args=None):
